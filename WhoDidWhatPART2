@@ -1,0 +1,4 @@
+Tucker: refactored most files and created interfaces to make implementing the GUI more effectively. Took keegans implementation of GUI 
+refactored to make it more Object-Oriented. Worked on Controller, NewGUI and Board files 
+
+Keegan: Worked on the Display and Square classes. Implemented most of GUI that was then refactored into Display and Square

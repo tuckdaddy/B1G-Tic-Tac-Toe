@@ -1,0 +1,6 @@
+Tucker: Created the majority of the project files and their methods (without implementations) helped clean up and manage the project,
+        as well as implementing some functions in class square and player. I failed on the unit tests, I said id implement more test but found it hard to test because
+        we built player move based on taking user input from the key board. 
+Keegan: Created enum classes 
+        Implemented finctions that deal with game states, worked heavily on the manager class that had most of its functionality moved to 
+        board class

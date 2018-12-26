@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane minHeight="650.0" minWidth="600.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uiowa.Controller">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Pane layoutX="-11.0" layoutY="-10.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: background.jpg;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane prefHeight="564.0" prefWidth="553.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="TL" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="225.0" prefWidth="341.0" text="0">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="#d30d0d" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="tigerhawk.jpg" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></Button>
+                  <Button fx:id="TM" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="249.0" prefWidth="437.0" text="Button" GridPane.columnIndex="1">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="tigerhawk.jpg" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Button fx:id="TR" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="374.0" prefWidth="518.0" text="Button" GridPane.columnIndex="2">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="tigerhawk.jpg" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Button fx:id="ML" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="347.0" prefWidth="460.0" text="Button" GridPane.rowIndex="1">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="tigerhawk.jpg" />
+                           </source>
+                        </ImageInput>
+                     </effect></Button>
+                  <Button fx:id="MM" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="323.0" prefWidth="441.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <effect>
+                          <ImageInput>
+                              <source>
+                                  <Image url="tigerhawk.jpg" />
+                              </source>
+                          </ImageInput>
+                      </effect></Button>
+                  <Button fx:id="MR" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="385.0" prefWidth="536.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                      <effect>
+                          <ImageInput>
+                              <source>
+                                  <Image url="tigerhawk.jpg" />
+                              </source>
+                          </ImageInput>
+                      </effect></Button>
+                  <Button fx:id="BL" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="381.0" prefWidth="490.0" text="Button" GridPane.rowIndex="2">
+                      <effect>
+                          <ImageInput>
+                              <source>
+                                  <Image url="tigerhawk.jpg" />
+                              </source>
+                          </ImageInput>
+                      </effect></Button>
+                  <Button fx:id="BM" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="271.0" prefWidth="466.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                      <effect>
+                          <ImageInput>
+                              <source>
+                                  <Image url="/tigerhawk.jpg" />
+                              </source>
+                          </ImageInput>
+                      </effect></Button>
+                  <Button fx:id="BR" mnemonicParsing="false" onMouseClicked="#handleClick" prefHeight="291.0" prefWidth="517.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                      <effect>
+                          <ImageInput>
+                              <source>
+                                  <Image url="tigerhawk.jpg" />
+                              </source>
+                          </ImageInput>
+                      </effect></Button>
+               </children>
+               <effect>
+                  <Blend />
+               </effect>
+            </GridPane>
+            <ButtonBar layoutX="14.0" layoutY="564.0" prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                <Button mnemonicParsing="false" onMouseClicked="#cvp" prefHeight="45.0" prefWidth="45.0" text="CvP" />
+                  <Button mnemonicParsing="false" onMouseClicked="#pvp" prefHeight="45.0" prefWidth="45.0" text="PvP" />
+                <Button maxHeight="45.0" maxWidth="45.0" minHeight="12.0" minWidth="12.0" mnemonicParsing="false" onMouseClicked="#quitGame" prefHeight="45.0" prefWidth="45.0" text="Quit" />
+                  <Button maxHeight="45.0" maxWidth="45.0" minHeight="12.0" minWidth="12.0" mnemonicParsing="false" onAction="#handleStart" onMouseClicked="#startGame" prefHeight="45.0" prefWidth="45.0" text="Start" />
+               </buttons>
+            </ButtonBar>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
